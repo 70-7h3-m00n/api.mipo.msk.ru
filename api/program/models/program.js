@@ -10,10 +10,10 @@ const slugify = require('slugify')
 module.exports = {
   lifecycles: {
     beforeCreate: async data => {
-      data.title && ((data.slug = slugify(data.title, { lower: true })), 'slug')
+      // data.title && ((data.slug = slugify(data.title, { lower: true })), 'slug')
     },
     beforeUpdate: async (params, data) => {
-      data.title && (data.slug = slugify(data.title, { lower: true }) || 'slug')
+      // data.title && (data.slug = slugify(data.title, { lower: true }) || 'slug')
     }
   }
 }
