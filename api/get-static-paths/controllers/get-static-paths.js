@@ -21,7 +21,7 @@ module.exports = {
     const paths = [
       ...new Set(programs.map(program => program.study_field?.slug))
     ].map(slug => ({
-      params: { studyFieldSlug: slug }
+      params: { studyFieldSlug: slug || 'study_field' }
     }))
 
     return paths
@@ -43,7 +43,7 @@ module.exports = {
     ]
       .filter(program => program.category?.type.toLowerCase() === 'course')
       .map(({ slug }) => ({
-        params: { studyFieldSlug: slug }
+        params: { studyFieldSlug: slug || 'study_field' }
       }))
 
     return paths
@@ -56,9 +56,12 @@ module.exports = {
     })
 
     const paths = programs
-      .filter(program => program.category?.type.toLowerCase() === 'profession')
-      .map(({ study_field: { slug } }) => ({
-        params: { studyFieldSlug: slug }
+      .filter(
+        program =>
+          program && program.category?.type?.toLowerCase() === 'profession'
+      )
+      .map(({ study_field }) => ({
+        params: { studyFieldSlug: study_field?.slug || 'study_field' }
       }))
 
     return paths
@@ -72,8 +75,8 @@ module.exports = {
 
     const paths = programs
       .filter(program => program.category?.type.toLowerCase() === 'mba')
-      .map(({ study_field: { slug } }) => ({
-        params: { studyFieldSlug: slug }
+      .map(({ study_field }) => ({
+        params: { studyFieldSlug: study_field.slug || 'study_field' }
       }))
 
     return paths
@@ -86,7 +89,7 @@ module.exports = {
     })
 
     const paths = programs.map(({ study_field, slug }) => ({
-      params: { slug, studyFieldSlug: study_field.slug }
+      params: { slug, studyFieldSlug: study_field?.slug || 'study_field' }
     }))
 
     return paths
@@ -101,7 +104,7 @@ module.exports = {
     const paths = programs
       .filter(program => program.category?.type.toLowerCase() === 'course')
       .map(({ study_field, slug }) => ({
-        params: { slug, studyFieldSlug: study_field.slug }
+        params: { slug, studyFieldSlug: study_field?.slug || 'study_field' }
       }))
 
     return paths
@@ -116,7 +119,7 @@ module.exports = {
     const paths = programs
       .filter(program => program.category?.type.toLowerCase() === 'profession')
       .map(({ study_field, slug }) => ({
-        params: { slug, studyFieldSlug: study_field.slug }
+        params: { slug, studyFieldSlug: study_field?.slug || 'study_field' }
       }))
 
     return paths
@@ -131,7 +134,7 @@ module.exports = {
     const paths = programs
       .filter(program => program.category?.type.toLowerCase() === 'mba')
       .map(({ study_field, slug }) => ({
-        params: { slug, studyFieldSlug: study_field.slug }
+        params: { slug, studyFieldSlug: study_field?.slug || 'study_field' }
       }))
 
     return paths
