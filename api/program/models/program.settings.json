@@ -18,7 +18,7 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": false,
+      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -28,9 +28,7 @@
     "heroPicture": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {
@@ -47,7 +45,7 @@
       },
       "type": "uid",
       "targetField": "title",
-      "required": false
+      "required": true
     },
     "description": {
       "pluginOptions": {
@@ -101,11 +99,13 @@
     },
     "study_field": {
       "model": "study-field",
-      "via": "programs"
+      "via": "programs",
+      "required": true
     },
     "category": {
       "via": "programs",
-      "model": "category"
+      "model": "category",
+      "required": true
     },
     "study_form": {
       "via": "programs",
@@ -179,9 +179,7 @@
     "forWhomPicture": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {
