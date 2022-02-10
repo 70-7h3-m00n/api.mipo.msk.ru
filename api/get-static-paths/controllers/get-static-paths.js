@@ -18,9 +18,9 @@ module.exports = {
       populate: getDataProps.populate.program.studyFieldSlugs
     })
 
-    const paths = [
-      ...new Set(programs.map(program => program.study_field?.slug))
-    ].map(slug => ({
+    const paths = Array.from(
+      new Set(programs.map(program => program.study_field?.slug))
+    ).map(slug => ({
       params: { studyFieldSlug: slug || 'study_field' }
     }))
 
@@ -33,14 +33,14 @@ module.exports = {
       populate: getDataProps.populate.program.studyFieldSlugs
     })
 
-    const paths = [
-      ...new Set(
+    const paths = Array.from(
+      new Set(
         programs.map(program => ({
           slug: program.study_field?.slug,
           type: program.category?.type
         }))
       )
-    ]
+    )
       .filter(program => program.category?.type.toLowerCase() === 'course')
       .map(({ slug }) => ({
         params: { studyFieldSlug: slug || 'study_field' }
