@@ -19,7 +19,9 @@
     "portrait": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -39,6 +41,10 @@
     "programs": {
       "via": "teachers",
       "collection": "program"
+    },
+    "numeric_order": {
+      "via": "teacher",
+      "model": "numeric-order"
     }
   }
 }

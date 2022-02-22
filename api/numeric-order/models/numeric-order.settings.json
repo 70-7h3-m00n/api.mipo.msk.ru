@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "numeric_orders",
+  "info": {
+    "name": "numeric-order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idx": {
+      "type": "biginteger"
+    },
+    "teacher": {
+      "model": "teacher",
+      "via": "numeric_order"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

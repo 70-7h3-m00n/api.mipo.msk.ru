@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/numeric-orders",
+      "handler": "numeric-order.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/numeric-orders/count",
+      "handler": "numeric-order.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/numeric-orders/:id",
+      "handler": "numeric-order.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/numeric-orders",
+      "handler": "numeric-order.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/numeric-orders/:id",
+      "handler": "numeric-order.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/numeric-orders/:id",
+      "handler": "numeric-order.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
