@@ -16,7 +16,7 @@ const getDataProps = {
       default: 'id name profession title story picture'
     },
     teacher: {
-      default: 'id name achievements portrait'
+      default: 'id name achievements portrait numeric_order'
     },
     webinar: {
       default: 'id name date picture title'
@@ -26,7 +26,11 @@ const getDataProps = {
     program: {
       default: [
         { path: 'study_field', select: 'title slug' },
-        { path: 'category', select: 'type label slug' }
+        { path: 'category', select: 'type label slug' },
+        {
+          path: 'numeric_order',
+          select: 'idx'
+        }
       ],
       studyFieldSlugs: [
         { path: 'study_field', select: 'slug' },
