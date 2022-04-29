@@ -110,7 +110,13 @@ module.exports = {
       populate: getDataProps.populate.program.default
     })
 
-    return { programs }
+    const reviews = await getData({
+      query: getDataProps.query.review,
+      select: getDataProps.select.review.default,
+      populate: getDataProps.populate.program.default
+    })
+
+    return { programs, reviews }
   },
   program: async () => {
     const programs = await getData({
@@ -119,6 +125,12 @@ module.exports = {
       populate: getDataProps.populate.program.default
     })
 
-    return { programs }
+    const reviews = await getData({
+      query: getDataProps.query.review,
+      select: getDataProps.select.review.default,
+      populate: getDataProps.populate.program.default
+    })
+
+    return { programs, reviews }
   }
 }
