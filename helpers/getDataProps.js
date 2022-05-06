@@ -16,7 +16,7 @@ const getDataProps = {
       default: 'id name profession title story picture'
     },
     teacher: {
-      default: 'id name achievements portrait numeric_order'
+      default: 'id name achievements specialization portrait numeric_order'
     },
     webinar: {
       default: 'id name date picture title'
