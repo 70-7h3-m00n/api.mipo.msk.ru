@@ -7,7 +7,7 @@ const getDataProps = {
   },
   select: {
     program: {
-      default: 'id title slug category timenprice study_field',
+      default: 'id title slug category timenprice study_field reviews',
       studyFields: 'id study_field',
       pathsStudyFields: 'id study_field category',
       pathsPrograms: 'id slug study_field category'
@@ -30,6 +30,10 @@ const getDataProps = {
         {
           path: 'numeric_order',
           select: 'idx'
+        },
+        {
+          path: 'reviews',
+          select: 'id name profession title story picture'
         }
       ],
       studyFieldSlugs: [
