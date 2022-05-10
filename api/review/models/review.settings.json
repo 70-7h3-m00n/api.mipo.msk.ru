@@ -32,6 +32,10 @@
     },
     "story": {
       "type": "richtext"
+    },
+    "program": {
+      "via": "reviews",
+      "model": "program"
     }
   }
 }

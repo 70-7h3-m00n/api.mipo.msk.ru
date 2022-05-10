@@ -28,7 +28,9 @@
     "heroPicture": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {
@@ -179,7 +181,9 @@
     "forWhomPicture": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {
@@ -192,6 +196,10 @@
       "collection": "sub-study-fields",
       "via": "programs",
       "dominant": true
+    },
+    "reviews": {
+      "collection": "review",
+      "via": "program"
     }
   }
 }
