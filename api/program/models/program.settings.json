@@ -200,6 +200,46 @@
     "reviews": {
       "collection": "review",
       "via": "program"
+    },
+    "sectionOurGraduates": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "program.section-our-graduates"
+    },
+    "SectionRelevantContentOnly": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "program.section-relevant-content-only"
+    },
+    "SectionInternationalExpertsItems": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "program.section-international-experts"
+    },
+    "StudyCostItems": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "program.study-cost-items"
     }
   }
 }

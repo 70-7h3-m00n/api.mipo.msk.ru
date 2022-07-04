@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_program_section_relevant_content_onlies",
+  "info": {
+    "name": "SectionRelevantContentOnly",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "string"
+    }
+  }
+}

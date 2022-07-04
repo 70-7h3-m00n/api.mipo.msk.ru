@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_program_section_our_graduates",
+  "info": {
+    "name": "SectionOurGraduates",
+    "icon": "angle-up"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}

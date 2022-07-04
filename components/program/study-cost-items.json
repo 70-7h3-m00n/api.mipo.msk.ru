@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_program_study_cost_items",
+  "info": {
+    "name": "StudyCostItems",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "string"
+    }
+  }
+}

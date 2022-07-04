@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_program_section_international_experts",
+  "info": {
+    "name": "SectionInternationalExperts",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    }
+  }
+}
