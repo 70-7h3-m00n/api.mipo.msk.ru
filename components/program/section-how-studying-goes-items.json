@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_program_section_how_studying_goes_items",
+  "info": {
+    "name": "SectionHowStudyingGoesItems",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "string"
+    }
+  }
+}
