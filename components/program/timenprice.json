@@ -21,6 +21,12 @@
     },
     "title": {
       "type": "string"
+    },
+    "hidePerMonth": {
+      "type": "boolean"
+    },
+    "hideTotal": {
+      "type": "boolean"
     }
   }
 }
