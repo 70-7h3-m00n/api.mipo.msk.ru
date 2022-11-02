@@ -109,5 +109,3 @@ build
 .strapi-updater.json
 
 .vscode
-
-yarn.lock
