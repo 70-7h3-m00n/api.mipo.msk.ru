@@ -27,6 +27,9 @@
     },
     "hideTotal": {
       "type": "boolean"
+    },
+    "closestAdmission": {
+      "type": "string"
     }
   }
 }
