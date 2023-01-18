@@ -56,8 +56,7 @@
         }
       },
       "type": "richtext",
-      "required": false,
-      "maxLength": 300
+      "required": false
     },
     "fullTitle": {
       "pluginOptions": {
