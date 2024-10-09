@@ -249,6 +249,21 @@
         }
       },
       "component": "program.section-how-studying-goes-items"
+    },
+    "yandex_feed_categories": {
+      "collection": "yandex-feed-category",
+      "via": "programs",
+      "dominant": true
+    },
+    "YandexStepsFeed": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "program.yandex-steps-feed"
     }
   }
 }
