@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yandex_feed_categories",
+  "info": {
+    "name": "YandexFeedCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idCategory": {
+      "type": "integer"
+    },
+    "parentId": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "programs": {
+      "via": "yandex_feed_categories",
+      "collection": "program"
+    }
+  }
+}

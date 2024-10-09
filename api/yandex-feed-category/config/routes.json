@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/yandex-feed-categories",
+      "handler": "yandex-feed-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/yandex-feed-categories/count",
+      "handler": "yandex-feed-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/yandex-feed-categories/:id",
+      "handler": "yandex-feed-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/yandex-feed-categories",
+      "handler": "yandex-feed-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/yandex-feed-categories/:id",
+      "handler": "yandex-feed-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/yandex-feed-categories/:id",
+      "handler": "yandex-feed-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

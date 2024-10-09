@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_program_yandex_steps_feeds",
+  "info": {
+    "name": "YandexStepsFeed",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "step": {
+      "type": "text"
+    }
+  }
+}
