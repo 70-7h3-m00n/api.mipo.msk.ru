@@ -30,6 +30,9 @@
     },
     "closestAdmission": {
       "type": "date"
+    },
+    "studyHoursString": {
+      "type": "string"
     }
   }
 }
