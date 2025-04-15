@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faculties_higher_educations",
+  "info": {
+    "name": "FacultiesHigherEducation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "program_higher_education": {
+      "via": "faculties_higher_education",
+      "model": "program-higher-education"
+    }
+  }
+}

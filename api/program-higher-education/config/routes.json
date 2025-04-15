@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/program-higher-educations",
+      "handler": "program-higher-education.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/program-higher-educations/count",
+      "handler": "program-higher-education.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/program-higher-educations/:id",
+      "handler": "program-higher-education.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/program-higher-educations",
+      "handler": "program-higher-education.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/program-higher-educations/:id",
+      "handler": "program-higher-education.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/program-higher-educations/:id",
+      "handler": "program-higher-education.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
