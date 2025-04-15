@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program_higher_educations",
+  "info": {
+    "name": "ProgramHigherEducation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isPopural": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "systemOfEducation": {
+      "type": "enumeration",
+      "enum": [
+        "bakalavriat",
+        "magistratura",
+        "specialitet"
+      ]
+    },
+    "informationOfDirection": {
+      "type": "richtext"
+    },
+    "whatYouWillLearn": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program.what-you-will-learn"
+    },
+    "timenprice": {
+      "type": "component",
+      "repeatable": true,
+      "component": "program.timenprice"
+    },
+    "program": {
+      "type": "component",
+      "repeatable": false,
+      "component": "program.short-contents"
+    },
+    "faculties_higher_education": {
+      "model": "faculties-higher-education",
+      "via": "program_higher_education"
+    }
+  }
+}
