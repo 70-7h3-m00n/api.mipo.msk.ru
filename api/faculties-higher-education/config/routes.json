@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/faculties-higher-educations",
+      "handler": "faculties-higher-education.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/faculties-higher-educations/count",
+      "handler": "faculties-higher-education.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/faculties-higher-educations/:id",
+      "handler": "faculties-higher-education.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/faculties-higher-educations",
+      "handler": "faculties-higher-education.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/faculties-higher-educations/:id",
+      "handler": "faculties-higher-education.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/faculties-higher-educations/:id",
+      "handler": "faculties-higher-education.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
