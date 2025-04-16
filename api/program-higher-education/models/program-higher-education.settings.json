@@ -39,14 +39,14 @@
       "repeatable": true,
       "component": "program.timenprice"
     },
-    "program": {
-      "type": "component",
-      "repeatable": false,
-      "component": "program.short-contents"
-    },
     "faculties_higher_education": {
       "model": "faculties-higher-education",
       "via": "program_higher_education"
+    },
+    "program": {
+      "type": "component",
+      "repeatable": true,
+      "component": "higher-education.program"
     }
   }
 }
