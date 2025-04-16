@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_higher_education_lists",
+  "info": {
+    "name": "list",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
