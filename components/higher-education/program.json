@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_higher_education_programs",
+  "info": {
+    "name": "program",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "higher-education.list"
+    }
+  }
+}
