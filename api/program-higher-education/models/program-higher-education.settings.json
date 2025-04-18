@@ -40,13 +40,20 @@
       "component": "program.timenprice"
     },
     "faculties_higher_education": {
-      "model": "faculties-higher-education",
-      "via": "program_higher_education"
+      "via": "program_higher_education",
+      "model": "faculties-higher-education"
     },
     "program": {
       "type": "component",
       "repeatable": true,
       "component": "higher-education.program"
+    },
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
