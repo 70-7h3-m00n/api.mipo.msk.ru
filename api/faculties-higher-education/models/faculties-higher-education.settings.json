@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "faculties_higher_educations",
   "info": {
-    "name": "FacultiesHigherEducation"
+    "name": "FacultiesHigherEducation",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -29,6 +30,10 @@
     "program_higher_education": {
       "via": "faculties_higher_education",
       "model": "program-higher-education"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
