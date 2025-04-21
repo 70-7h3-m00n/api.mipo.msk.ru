@@ -31,9 +31,9 @@
       "type": "uid",
       "targetField": "name"
     },
-    "program_higher_education": {
+    "program_higher_educations": {
       "via": "faculties_higher_educations",
-      "model": "program-higher-education"
+      "collection": "program-higher-education"
     }
   }
 }
