@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_higher_education_semestrs",
+  "info": {
+    "name": "semestr",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "higher-education.list"
+    }
+  }
+}
