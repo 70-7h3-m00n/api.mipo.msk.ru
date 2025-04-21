@@ -41,7 +41,8 @@
     },
     "faculties_higher_educations": {
       "collection": "faculties-higher-education",
-      "via": "program_higher_education"
+      "via": "program_higher_educations",
+      "dominant": true
     },
     "name": {
       "type": "string"
