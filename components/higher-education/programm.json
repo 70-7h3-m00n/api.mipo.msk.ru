@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_higher_education_programms",
+  "info": {
+    "name": "programm",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "listprogramm": {
+      "type": "component",
+      "repeatable": true,
+      "component": "higher-education.listprogramm"
+    }
+  }
+}

@@ -27,13 +27,13 @@
       "required": false,
       "pluginOptions": {}
     },
-    "program_higher_education": {
-      "via": "faculties_higher_education",
-      "model": "program-higher-education"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "program_higher_education": {
+      "via": "faculties_higher_educations",
+      "model": "program-higher-education"
     }
   }
 }
