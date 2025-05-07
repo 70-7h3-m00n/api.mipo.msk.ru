@@ -19,7 +19,7 @@ const getDataProps = {
       default: 'id name achievements specialization portrait numeric_order'
     },
     webinar: {
-      default: 'id name date picture title category'
+      default: 'id name date picture title'
     }
   },
   populate: {
