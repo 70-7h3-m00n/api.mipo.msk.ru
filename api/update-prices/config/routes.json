@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/update-prices/:id",
+      "handler": "update-prices.updatePrice",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
