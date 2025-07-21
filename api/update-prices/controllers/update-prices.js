@@ -26,7 +26,7 @@ module.exports = {
       const updatedProgram = await strapi.services.program.update(
         { id },
         {
-          PricePracticialTariffFromDB: body.pricePracticialTariff ?? "",
+          PricePracticialTariffFromDB: body.PricePracticialTariffFromDB ?? "",
           PriceBasicTariffFromDB: body.PriceBasicTariffFromDB ?? "",
           PriceExpertTariffFromDB: body.PriceExpertTariffFromDB ?? "",
           SaleToThisProductFromDB: body.SaleToThisProductFromDB ?? "",
